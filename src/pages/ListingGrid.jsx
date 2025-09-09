@@ -30,7 +30,7 @@ export default function ListingGrid({ location }) {
   return (
     <Container sx={{ py: 2 }}>
       {/* Title */}
-      <Typography variant="h6" sx={{ fontWeight: 800, mb: 3,color:"#fc05f8" }}>
+      <Typography variant="h6" sx={{ fontWeight: 800, mb: 1,color:"#fc05f8" }}>
         Explore Collections
       </Typography>
 
@@ -38,12 +38,15 @@ export default function ListingGrid({ location }) {
       <Box
         sx={{
           mb: 5,
+          p: 2,
           display: 'flex',
           gap: 3,
           flexDirection: { xs: 'column', md: 'row' },
           justifyContent: 'space-between',
           alignItems: { xs: 'start', md: 'end' },
-          width: '100%',
+          width: '98%',
+          bgcolor: "rgba(0,0,0,.4)",
+          borderRadius:"5px"
         }}
       >
         <BottomCategories

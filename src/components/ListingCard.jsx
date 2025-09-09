@@ -25,7 +25,7 @@ export default function ListingCard({ item }) {
       sx={{
     borderRadius: 3,
     boxShadow: 6,
-    bgcolor: "transparent",
+    bgcolor:  "rgba(0,0,0,.4)",
     overflow: "hidden",
     transition: "0.3s",
     width: { xs: "100%", md: 360 }, 
@@ -37,7 +37,7 @@ export default function ListingCard({ item }) {
       <Box sx={{ overflow: "hidden" }}>
         <CardMedia
           component="img"
-          height="350px"
+          height="380px"
           width={"300px"}
           image={item.img}
           alt={item.name}
@@ -116,7 +116,7 @@ export default function ListingCard({ item }) {
       </CardContent>
 
       {/* Buttons */}
-      <CardActions sx={{ px: 2, pb: 2, pt: 0, gap: 1 }}>
+      <CardActions sx={{ px: 2, pb: 4, pt: 0, gap: 1 }}>
         <Button
         href={`tel:${882513396}`}
           sx={{
@@ -145,7 +145,7 @@ export default function ListingCard({ item }) {
         >
           WhatsApp
         </Button>
-        <Button variant="text" color="error" startIcon={<FavoriteBorderIcon />} />
+        {/* <Button variant="text" color="error" startIcon={<FavoriteBorderIcon />} /> */}
       </CardActions>
     </Card>
   );
